@@ -1,0 +1,41 @@
+<% include portials/header.ejs %>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center_text-danger"><%= message %></p>
+        <% } %>
+        <form action="" class="add-player-form" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group_col-md-4">
+                    <input type="text" class="form-control" id="first-name" name="first_name" placeholder="First Name" reuired>
+                </div>
+                <div class="form-group_col-md-4">
+                    <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Last Name" reuired>
+                </div>
+                <div class="form-group_col-md-4">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Uername" reuired>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-goup_col-md-6">
+                    <input type="number" class="form-control" name="number" id="number" placeholder="Number" required>
+                </div>
+                <div class="form-goup_col-md-6"></div>
+                    <select name="position" id="position" class="form-control" required>
+                        <option selected disabled>Chose Position</option>
+                        <option>Goalkeeper</option>
+                        <option>Defender</option>
+                        <option>Midfielder</option>
+                        <option>Forward</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="player-img"><b>Player Image</b></label>
+                    <input type="file" name="image" id="player-img" class="" required>
+                </div>
+            </div>
+            <button type="submit" class="bnt btn-primary float-right">Add Player</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
