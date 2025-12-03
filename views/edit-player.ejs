@@ -1,4 +1,4 @@
-<% include partials/header.ejs %>
+<%- include('partials/header.ejs') %>
     <div class="container">
         <% if (message) { %>
         <p class="text-center_text-danger"><%= message %></p>
@@ -28,16 +28,16 @@
                     <label for=""></label>
                     <select name="position" id="position" class="form-control" required>
                         <option selected><%= player.position %></option>
-                        <option>Goalkeeper</option>
-                        <option>Centre Back</option>
-                        <option>Right Back</option>
-                        <option>Left Back</option>
-                        <option>Defesinve Midfielder</option>
-                        <option>Central Midfielder</option>
-                        <option>Attacking Midfielder</option>
-                        <option>Right Wing Forward</option>
-                        <option>Left Wing Forward</option>
-                        <option>Striker</option>
+                        <option value="Goalkeeper">Goalkeeper</option>
+                        <option value="Centre Back">Centre Back</option>
+                        <option value="Right Back">Right Back</option>
+                        <option value="Left Back">Left Back</option>
+                        <option value="Defesinve Midfielder">Defesinve Midfielder</option>
+                        <option value="Central Midfielder">Central Midfielder</option>
+                        <option value="Attacking Midfielder">Attacking Midfielder</option>
+                        <option value="Right Wing Forward">Right Wing Forward</option>
+                        <option value="Left Wing Forward">Left Wing Forward</option>
+                        <option value="Striker">Striker</option>
                     </select>
                 </div>
             </div>

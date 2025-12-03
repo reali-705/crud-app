@@ -1,4 +1,4 @@
-<% include portials/header.ejs %>
+<%- include('partials/header.ejs') %>
     <div class="container">
         <% if (message != '') { %>
             <p class="text-center_text-danger"><%= message %></p>
@@ -12,7 +12,7 @@
                     <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Last Name" reuired>
                 </div>
                 <div class="form-group_col-md-4">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Uername" reuired>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" reuired>
                 </div>
             </div>
             <div class="form-row">
@@ -22,10 +22,16 @@
                 <div class="form-goup_col-md-6"></div>
                     <select name="position" id="position" class="form-control" required>
                         <option selected disabled>Chose Position</option>
-                        <option>Goalkeeper</option>
-                        <option>Defender</option>
-                        <option>Midfielder</option>
-                        <option>Forward</option>
+                        <option value="Goalkeeper">Goalkeeper</option>
+                        <option value="Centre Back">Centre Back</option>
+                        <option value="Right Back">Right Back</option>
+                        <option value="Left Back">Left Back</option>
+                        <option value="Defesinve Midfielder">Defesinve Midfielder</option>
+                        <option value="Central Midfielder">Central Midfielder</option>
+                        <option value="Attacking Midfielder">Attacking Midfielder</option>
+                        <option value="Right Wing Forward">Right Wing Forward</option>
+                        <option value="Left Wing Forward">Left Wing Forward</option>
+                        <option value="Striker">Striker</option>
                     </select>
                 </div>
                 <div class="col-md-12">
